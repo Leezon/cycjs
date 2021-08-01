@@ -1,7 +1,7 @@
 {
-  "name": "leezon",
-  "version": "1.0.6",
-  "description": "A function tool library",
+  "name": "fetool",
+  "version": "1.0.1",
+  "description": "javascript functional library",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Leezon/fetool.git"
@@ -13,7 +13,6 @@
   },
   "homepage": "https://github.com/Leezon/fetool#readme",
   "keywords": [
-    "fetool",
     "util",
     "tool",
     "functional",

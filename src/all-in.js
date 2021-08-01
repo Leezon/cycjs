@@ -1,11 +1,4 @@
-import debounce from './modules/debounce';
-import throttle from './modules/throttle';
-import toTree from './modules/toTree';
-import getType from './modules/getType';
-
-export default {
-  debounce,
-  throttle,
-  toTree,
-  getType,
-};
+export { default as debounce } from './modules/debounce';
+export { default as throttle } from './modules/throttle';
+export { default as getType } from './modules/getType';
+export { default as toTree } from './modules/toTree';

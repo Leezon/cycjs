@@ -6,7 +6,7 @@ export default {
   input: 'src/main.js',
   output: {
     file: pkg.main, // 打包文件名称
-    name: 'fetool', // 浏览器环境全局变量名
+    name: '_', // 浏览器环境全局变量名
     format: 'umd', // 打包成通用模块
     indent: false, // 不需要缩进
   },

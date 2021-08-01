@@ -1,3 +1,1 @@
-import fetool from './all-in';
-
-export default fetool;
+export * from './all-in';
