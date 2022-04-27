@@ -1,5 +1,7 @@
 import babel from '@rollup/plugin-babel'; // 兼容处理
-
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
+import json from 'rollup-plugin-json';
 import pkg from '../package.json';
 
 export default {
@@ -11,5 +13,10 @@ export default {
     indent: false, // 不需要缩进
   },
   external: [], // 外部不需要打进包的库
-  plugins: [babel({ babelHelpers: 'bundled' })],
+  plugins: [
+    resolve(),
+    commonjs(),
+    json(),
+    babel({ babelHelpers: 'bundled', exclude: 'node_modules/**' }),
+  ],
 };
