@@ -24,14 +24,14 @@ yarn add leezon
 ### 1.node
 
 ```javascript
-const lee = require("leezon");
+const lee = require('leezon');
 lee.debounce(fn, delay);
 ```
 
 ### 2.esm
 
 ```javascript
-import lee from "leezon";
+import lee from 'leezon';
 lee.debounce(fn, delay);
 ```
 
@@ -39,10 +39,10 @@ lee.debounce(fn, delay);
 
 ```html
 <body>
-  <script src="./leezon/dist/index.js"></script>
+  <script src="./dist/index.js"></script>
   <script>
     function handle() {
-      console.log("debounce");
+      console.log('debounce');
     }
     window.onresize = leezon.debounce(handle, 300);
   </script>
