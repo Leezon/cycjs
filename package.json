@@ -1,6 +1,6 @@
 {
   "name": "leezon",
-  "version": "1.1.2",
+  "version": "0.0.1",
   "description": "javascript functional library",
   "author": "Leezon",
   "main": "./dist/index.js",
@@ -9,7 +9,8 @@
     "build:dev": "cross-env NODE_ENV=development node ./build",
     "test": "jest",
     "pretest": "npm run build:dev",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "npm run build:prod && npm publish"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
