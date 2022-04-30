@@ -5,3 +5,4 @@ coverage
 *.lock
 *.log
 *lock.json
+.eslintcache
