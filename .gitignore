@@ -2,5 +2,6 @@
 node_modules
 dist
 coverage
-.lock
-package-lock.json
+*.lock
+*.log
+*lock.json
