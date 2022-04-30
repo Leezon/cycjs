@@ -6,7 +6,6 @@
  */
 function throttle(fn, delay = 100) {
   let canRun = true;
-  // eslint-disable-next-line func-names
   return function (...args) {
     if (!canRun) return;
     canRun = false;

@@ -7,9 +7,9 @@
 function getType(type) {
   return typeof type === 'object'
     ? Object.prototype.toString
-      .call(type)
-      .match(/[A-Z][a-z]+/)[0]
-      .toLowerCase()
+        .call(type)
+        .match(/[A-Z][a-z]+/)[0]
+        .toLowerCase()
     : typeof type;
 }
 
