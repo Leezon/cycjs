@@ -1,20 +1,18 @@
 /**
  * 数组转树 利用数组和对象相互引用  时间复杂度O(n)
- * @param {Array} array 数据源
+ * @param {Array} arr 数据源
  * @param {Object} config {id,pid,children,every}
  * @returns Array
  */
-function totree(array, config) {
-  const cloneArray = JSON.parse(JSON.stringify(array));
+function totree(arr, config) {
+  const cloneArray = JSON.parse(JSON.stringify(arr));
   const baseConfig = {
     id: 'id',
     pid: 'pid',
     children: 'children',
     every: true,
   };
-  const {
-    id, pid, children, every,
-  } = { ...baseConfig, ...config };
+  const { id, pid, children, every } = { ...baseConfig, ...config };
   const map = {};
   const result = [];
 

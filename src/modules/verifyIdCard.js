@@ -11,14 +11,14 @@ function verifyIdCard(idCard = '') {
   if (idCard.length !== 18) {
     return false;
   }
-  let mod = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
-  let calc =
+  const mod = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
+  const calc =
     idCard
       .slice(0, 17)
       .split('')
       .reduce((pre, cur, index) => {
-        pre += cur * Math.pow(2, 17 - index);
-        return pre;
+        const temp = pre + cur * 2 ** (17 - index);
+        return temp;
       }, 0) % 11;
   return mod[calc] === idCard.slice(-1).toUpperCase();
 }
