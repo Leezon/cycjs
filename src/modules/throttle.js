@@ -6,7 +6,7 @@
  */
 function throttle(fn, delay = 100) {
   let canRun = true;
-  return (...args) => {
+  return function (...args) {
     if (!canRun) return;
     canRun = false;
     setTimeout(() => {
