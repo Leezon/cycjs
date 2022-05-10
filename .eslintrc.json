@@ -6,7 +6,7 @@
   },
   "globals": {
     "window": true,
-    "leezon": true
+    "cycjs": true
   },
   "plugins": ["prettier", "jest"],
   "extends": ["prettier", "airbnb-base", "plugin:prettier/recommended"],

@@ -1,27 +1,29 @@
-# leezon
+# cycjs
 
-JavaScript functional library.
+a javaScript functional library.
 
-JavaScript 函数工具库。
+### why cyc?
+
+contribute your code.
 
 ## Usage
 
 ```bash
-npm i leezon
+npm i cycjs
 ```
 
 ### 1. commonjs
 
 ```javascript
-const lee = require('leezon');
-lee.debounce(fn, delay);
+const cycjs = require('cycjs');
+cycjs.debounce(fn, delay);
 ```
 
 ### 2. esm
 
 ```javascript
-import lee from 'leezon';
-lee.debounce(fn, delay);
+import cycjs from 'cycjs';
+cycjs.debounce(fn, delay);
 ```
 
 ### 3. broswer
@@ -33,7 +35,7 @@ lee.debounce(fn, delay);
     function handle() {
       console.log('debounce');
     }
-    window.onresize = leezon.debounce(handle, 300);
+    window.onresize = cycjs.debounce(handle, 300);
   </script>
 </body>
 ```
