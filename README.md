@@ -1,6 +1,6 @@
 # cycjs
 
-a javaScript functional library.
+a javascript functional library.
 
 ### why cyc?
 
