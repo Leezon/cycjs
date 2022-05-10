@@ -49,6 +49,7 @@
   },
   "homepage": "https://github.com/Leezon/cycjs#readme",
   "keywords": [
+    "cycjs",
     "util",
     "functional",
     "server",
