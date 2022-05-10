@@ -15,15 +15,15 @@ npm i cycjs
 ### 1. commonjs
 
 ```javascript
-const lee = require('cycjs');
-lee.debounce(fn, delay);
+const cycjs = require('cycjs');
+cycjs.debounce(fn, delay);
 ```
 
 ### 2. esm
 
 ```javascript
-import lee from 'cycjs';
-lee.debounce(fn, delay);
+import cycjs from 'cycjs';
+cycjs.debounce(fn, delay);
 ```
 
 ### 3. broswer
