@@ -1,5 +1,5 @@
-export = leezon;
-declare namespace leezon {
+export = cycjs;
+declare namespace cycjs {
   export function debounce(fn: Function, delay: number): Function;
   export function throttle(fn: Function, delay: number): Function;
   export function getType(type: any): String;
@@ -8,6 +8,6 @@ declare namespace leezon {
   export function animation(
     el: HTMLElement,
     json: object,
-    callback: Function
+    callback: Function,
   ): void;
 }
