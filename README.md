@@ -1,10 +1,12 @@
 # cycjs
 
+what is cycjs ?
+
 a javascript functional library.
 
-### why cyc?
+why cyc ?
 
-contribute your code.
+contributing your code.
 
 ## Usage
 
@@ -16,26 +18,34 @@ npm i cycjs
 
 ```javascript
 const cycjs = require('cycjs');
-cycjs.debounce(fn, delay);
+const { debounce } = require('cycjs');
+const debounce = require('cycjs/lib/debounce');
 ```
 
 ### 2. esm
 
 ```javascript
 import cycjs from 'cycjs';
-cycjs.debounce(fn, delay);
+import { debounce } from 'cycjs';
+import debounce from 'cycjs/lib/debounce';
 ```
 
 ### 3. broswer
 
 ```html
 <body>
-  <script src="./dist/index.js"></script>
+  <script src="./lib/index.js"></script>
   <script>
-    function handle() {
-      console.log('debounce');
-    }
     window.onresize = cycjs.debounce(handle, 300);
+  </script>
+</body>
+```
+
+```html
+<body>
+  <script src="./lib/debounce.js"></script>
+  <script>
+    window.onresize = debounce(handle, 300);
   </script>
 </body>
 ```
