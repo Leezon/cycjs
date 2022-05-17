@@ -23,7 +23,7 @@ async function build(option) {
       await build(
         configFactory({
           input: `src/modules/${module}`,
-          file: `./dist/${module}`,
+          file: `./lib/${module}`,
           name: module.replace(/\.js/, ''),
           format: 'umd',
         }),
@@ -33,14 +33,14 @@ async function build(option) {
     // build All
     await build(
       configFactory({
-        input: 'src/main.js',
+        input: 'src/index.js',
         file: pkg.main,
         name: pkg.name,
         format: 'umd',
       }),
     );
 
-    await promisify(ncp)('./types/', './dist/');
+    await promisify(ncp)('./types/', './lib/');
 
     console.log('build success !'); // eslint-disable-line no-console
   } catch (e) {

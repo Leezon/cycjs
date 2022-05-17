@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "a javascript functional library",
   "author": "Leezon",
-  "main": "./dist/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "cross-env NODE_ENV=production node ./build",
     "test": "jest",
@@ -39,7 +40,7 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "repository": {
     "type": "git",
