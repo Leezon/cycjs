@@ -5,12 +5,9 @@
   "author": "Leezon",
   "main": "./dist/index.js",
   "scripts": {
-    "build:prod": "cross-env NODE_ENV=production node ./build",
-    "build:dev": "cross-env NODE_ENV=development node ./build",
+    "build": "cross-env NODE_ENV=production node ./build",
     "test": "jest",
-    "pretest": "npm run build:dev",
     "prepare": "husky install",
-    "release": "npm run build:prod && npm publish",
     "commit": "cz"
   },
   "devDependencies": {

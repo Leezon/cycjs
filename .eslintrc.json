@@ -19,7 +19,10 @@
     "prettier/prettier": "error",
     "object-curly-newline": "off",
     "no-param-reassign": "off",
-    "func-names": "off"
+    "func-names": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off"
   },
   "ignorePatterns": ["node_modules", "dist"]
 }
