@@ -1,6 +1,6 @@
 {
   "name": "cycjs",
-  "version": "0.0.2",
+  "version": "0.0.3-0",
   "description": "a javascript functional library",
   "author": "Leezon",
   "main": "lib/index.js",
