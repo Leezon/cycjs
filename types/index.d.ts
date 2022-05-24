@@ -28,7 +28,7 @@ declare namespace cycjs {
    * 数组转树
    * @param array 数据源，json数组
    * @param config {id,pid,children,every}
-   * @returns 树形json数组
+   * @return 树形json数组
    */
   export function toTree<T>(
     array: T[],
@@ -52,6 +52,7 @@ declare namespace cycjs {
    * @param el 元素
    * @param json 动画参数
    * @param callback 回调函数
+   * @return void
    * eg: animate(document.body, { scrollTop: 200 }, () => {});
    */
   export function animation(
@@ -59,4 +60,11 @@ declare namespace cycjs {
     json: { [key: string]: any },
     callback: () => any,
   ): void;
+
+  /**
+   * 动图加载脚本
+   * @param urls 脚本地址，字符串或字符串数组
+   * @return 返回一个Promise
+   */
+  export function loadScript(urls: string[]|string): Promise;
 }
