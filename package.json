@@ -6,6 +6,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "dev": "cross-env NODE_ENV=development node ./build",
     "build": "cross-env NODE_ENV=production node ./build",
     "test": "jest",
     "prepare": "husky install",
