@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "a javascript functional library",
   "author": "Leezon",
-  "main": "lib/index.umdjs",
+  "main": "lib/index.umd.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
